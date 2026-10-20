@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kode Pos Indonesia</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="java2.js" defer></script>
+</head>
+<body>
+    <main class="app">
+        <header class="topbar">Kode Pos Indonesia</header>
+        <section class="search-panel">
+            <p class="intro">
+                Cari kode pos di wilayah Indonesia dengan memasukkan
+                beberapa kata kunci pencarian di bawah ini.
+            </p>
+            <div class="field">
+                <label for="provinsi">Provinsi</label>
+                <select id="provinsi">
+                    <option value="">Pilih Provinsi</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="kota">Kota atau Kabupaten</label>
+                <select id="kota" disabled>
+                    <option value="">Pilih Kota/Kabupaten</option>
+                </select>
+            </div>
+            <form id="formPencarian">
+                <label for="keyword">Masukkan Kata Kunci Pencarian</label>
+                <div class="search-row">
+                    <input
+                        type="text"
+                        id="keyword"
+                        placeholder="Contoh: 60111 atau Keputih"
+                    >
+                    <button type="submit">Cari</button>
+                </div>
+            </form>
+            <button type="button" id="reset" class="reset-button">
+                Reset
+            </button>
+        </section>
+        <section class="results-section">
+            <h1>Hasil Pencarian</h1>
+            <p id="ringkasan" class="summary">
+                Pilih wilayah atau masukkan kata kunci untuk mencari kode pos.
+            </p>
+            <div id="hasil" class="results-grid"></div>
+        </section>
+    </main>
+</body>
+</html>

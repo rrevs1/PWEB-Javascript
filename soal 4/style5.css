@@ -1,0 +1,29 @@
+body {
+    font-family: "Times New Roman", serif;
+    margin: 25px;
+    color: #222;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+select {
+    padding: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#jenisProduk {
+    width: 158px;
+}
+
+#merkProduk {
+    width: 105px;
+    margin-left: 4px;
+}

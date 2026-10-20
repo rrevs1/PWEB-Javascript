@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Mahasiswa</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <p class="label">FORMULIR AKADEMIK</p>
+            <h1>Registrasi Mahasiswa</h1>
+            <p>Silakan isi data berikut dengan benar.</p>
+        </header>
+        <form id="regForm" name="RegForm" novalidate>
+            <div class="form-group">
+                <label for="nama">Nama Mahasiswa <span>*</span></label>
+                <div class="field">
+                    <input type="text" id="nama" name="Nama"
+                        placeholder="Contoh: Sanchia Revana Koasasi"
+                        autocomplete="off">
+                    <div id="suggestions" class="suggestions"></div>
+                </div>
+                <small class="hint">Ketik nama untuk melihat rekomendasi.</small>
+                <small id="nama-error" class="error"></small>
+            </div>
+            <div class="form-group">
+                <label for="nim">NIM <span>*</span></label>
+                <input type="text" id="nim" name="NIM"
+                    inputmode="numeric" maxlength="10"
+                    placeholder="Masukkan 10 digit NIM">
+                <small id="nim-error" class="error"></small>
+            </div>
+            <div class="form-group">
+                <label for="matkul">Mata Kuliah <span>*</span></label>
+                <select id="matkul" name="MataKuliah">
+                    <option value="">Pilih Mata Kuliah</option>
+                </select>
+                <small id="matkul-error" class="error"></small>
+            </div>
+            <div class="form-group">
+                <label for="dosen">Dosen</label>
+                <input type="text" id="dosen" name="Dosen"
+                    placeholder="Terisi otomatis" readonly>
+            </div>
+            <div class="agreement">
+                <input type="checkbox" id="agree" name="Agree">
+                <label for="agree">
+                    Saya memastikan data yang diisi sudah benar.
+                </label>
+            </div>
+            <small id="agree-error" class="error"></small>
+            <div class="buttons">
+                <button type="submit" class="btn-primary">
+                    Kirim Registrasi
+                </button>
+                <button type="reset" class="btn-reset">
+                    Reset
+                </button>
+            </div>
+            <p class="note"><span>*</span> Wajib diisi</p>
+            <div id="hasil" class="result" hidden></div>
+        </form>
+    </main>
+    <script src="java1.js"></script>
+</body>
+</html>
